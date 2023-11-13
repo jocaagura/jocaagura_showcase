@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Unit testing with good coverage of dart doc
+
+## 0.0.5
+
+* License added
