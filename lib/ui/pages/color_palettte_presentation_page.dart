@@ -13,14 +13,14 @@ class ColorPalettePresentationPage extends StatelessWidget {
         title: const Text('Color Palette'),
       ),
       body: ListView(
-        children: <Widget>[
-          const SizedBox(
+        children: const <Widget>[
+          SizedBox(
             height: 16,
           ),
           NavigationListTile(
-              page: const ColorSchemePage(),
+              page: ColorSchemePage(),
               title: 'Color Scheme presentation',
-              subTitle: 'Showcase your theme color scheme palette.'),
+              subTitle: 'Showcase your theme color scheme palette.',),
         ],
       ),
     );

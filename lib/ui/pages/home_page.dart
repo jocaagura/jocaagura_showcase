@@ -25,22 +25,22 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 16.0,
             ),
-            Text('Main components'),
-            SizedBox(
+            const Text('Main components'),
+            const SizedBox(
               height: 8.0,
             ),
-            NavigationListTile(
+            const NavigationListTile(
               page: page,
               title: title,
               subTitle: subTitle,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8.0,
             ),
             NavigationListTile(
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
               title: 'Custom widgets',
               subTitle: 'The widgets that you are developed',
             ),
-            SizedBox(
+            const SizedBox(
               height: 8.0,
             ),
             NavigationListTile(

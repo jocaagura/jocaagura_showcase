@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:jocaagura_showcase/ui/widgets/date_picker_example.dart';
 
 import '../widgets/animated_linear_progress_indicator_widget.dart';
 import '../widgets/basic_showcase_widget.dart';
 import '../widgets/checkbox_example.dart';
+import '../widgets/date_picker_example.dart';
 import '../widgets/dialog_example.dart';
 import '../widgets/navigation_list_tile.dart';
 import '../widgets/pop_menu_example.dart';
@@ -204,181 +204,183 @@ class CommonMaterialWidgetIndexPage extends StatelessWidget {
           ),
 
           NavigationListTile(
-              page: CommonMaterialWidgetsPage(
-                label: 'Communication widgets',
-                materialWidgets: [
-                  BasicShowcaseWidget(
-                    label: 'Badge',
-                    child: Badge(
-                      label: const Text('1'),
-                      child: Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).splashColor,
-                          borderRadius: BorderRadius.circular(25),
+            page: CommonMaterialWidgetsPage(
+              label: 'Communication widgets',
+              materialWidgets: <BasicShowcaseWidget>[
+                BasicShowcaseWidget(
+                  label: 'Badge',
+                  child: Badge(
+                    label: const Text('1'),
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).splashColor,
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                      child: const Icon(Icons.heart_broken),
+                    ),
+                  ),
+                ),
+                const BasicShowcaseWidget(
+                  label: 'LinearProgressIndicator',
+                  child: Center(
+                    child: AnimatedLinearProgressIndicatorWidget(),
+                  ),
+                ),
+                const BasicShowcaseWidget(
+                  label: 'Dialog Example',
+                  child: DialogExample(),
+                ),
+                BasicShowcaseWidget(
+                  label: 'ListTile',
+                  child: ColoredBox(
+                    color: Theme.of(context).primaryColorLight,
+                    child: const ListTile(
+                      title: Text('One list tile'),
+                    ),
+                  ),
+                ),
+                BasicShowcaseWidget(
+                  label: 'ListTile',
+                  child: ColoredBox(
+                    color: Theme.of(context).primaryColorLight,
+                    child: const ListTile(
+                      trailing: Icon(Icons.arrow_forward_ios),
+                      title: Text('One list tile trailing'),
+                    ),
+                  ),
+                ),
+                BasicShowcaseWidget(
+                  label: 'ListTile',
+                  child: ColoredBox(
+                    color: Theme.of(context).primaryColorLight,
+                    child: const ListTile(
+                      trailing: Icon(Icons.arrow_forward_ios),
+                      title: Text('One list tile trailing'),
+                    ),
+                  ),
+                ),
+                BasicShowcaseWidget(
+                  label: 'ListTile',
+                  child: ColoredBox(
+                    color: Theme.of(context).primaryColorLight,
+                    child: const ListTile(
+                      leading: FlutterLogo(),
+                      title: Text('One list tile leading'),
+                      subtitle: Text('This is the subtitle'),
+                    ),
+                  ),
+                ),
+                BasicShowcaseWidget(
+                  label: 'ListTile',
+                  child: ColoredBox(
+                    color: Theme.of(context).primaryColorLight,
+                    child: const ListTile(
+                      leading: FlutterLogo(),
+                      title: Text('One list tile leading'),
+                      subtitle: Text('This is the subtitle\nThird line'),
+                    ),
+                  ),
+                ),
+                BasicShowcaseWidget(
+                  label: 'Divider',
+                  child: Center(
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          child: Container(
+                            alignment: Alignment.center,
+                            width: double.maxFinite,
+                            color: Theme.of(context).primaryColor,
+                            child: const Text('above'),
+                          ),
                         ),
-                        child: const Icon(Icons.heart_broken),
-                      ),
+                        const Divider(
+                          height: 20,
+                          thickness: 5,
+                          endIndent: 5,
+                          indent: 5,
+                        ),
+                        Expanded(
+                          child: Container(
+                            alignment: Alignment.center,
+                            width: double.maxFinite,
+                            color: Theme.of(context).primaryColorLight,
+                            child: const Text('below'),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  const BasicShowcaseWidget(
-                    label: 'LinearProgressIndicator',
-                    child: Center(
-                      child: AnimatedLinearProgressIndicatorWidget(),
-                    ),
-                  ),
-                  const BasicShowcaseWidget(
-                    label: 'Dialog Example',
-                    child: DialogExample(),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'ListTile',
-                    child: Container(
-                      color: Theme.of(context).primaryColorLight,
-                      child: const ListTile(
-                        title: Text('One list tile'),
-                      ),
-                    ),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'ListTile',
-                    child: Container(
-                      color: Theme.of(context).primaryColorLight,
-                      child: const ListTile(
-                        trailing: Icon(Icons.arrow_forward_ios),
-                        title: Text('One list tile trailing'),
-                      ),
-                    ),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'ListTile',
-                    child: Container(
-                      color: Theme.of(context).primaryColorLight,
-                      child: const ListTile(
-                        trailing: Icon(Icons.arrow_forward_ios),
-                        title: Text('One list tile trailing'),
-                      ),
-                    ),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'ListTile',
-                    child: Container(
-                      color: Theme.of(context).primaryColorLight,
-                      child: const ListTile(
-                        leading: FlutterLogo(),
-                        title: Text('One list tile leading'),
-                        subtitle: Text('This is the subtitle'),
-                      ),
-                    ),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'ListTile',
-                    child: ColoredBox(
-                      color: Theme.of(context).primaryColorLight,
-                      child: const ListTile(
-                        leading: FlutterLogo(),
-                        title: Text('One list tile leading'),
-                        subtitle: Text('This is the subtitle\nThird line'),
-                      ),
-                    ),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'Divider',
-                    child: Center(
-                      child: Column(
-                        children: <Widget>[
-                          Expanded(
-                            child: Container(
-                              alignment: Alignment.center,
-                              width: double.maxFinite,
-                              color: Theme.of(context).primaryColor,
-                              child: const Text('above'),
+                ),
+                BasicShowcaseWidget(
+                  label: 'Card',
+                  child: Card(
+                    elevation: 5.0,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          leading: Icon(Icons.album),
+                          title: Text('The Enchanted Nightingale'),
+                          subtitle: Text(
+                            'Music by Julie Gable. Lyrics by Sidney Stein.',
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            TextButton(
+                              child: const Text('BUY TICKETS'),
+                              onPressed: () {},
                             ),
-                          ),
-                          const Divider(
-                            height: 20,
-                            thickness: 5,
-                            endIndent: 5,
-                            indent: 5,
-                          ),
-                          Expanded(
-                            child: Container(
-                              alignment: Alignment.center,
-                              width: double.maxFinite,
-                              color: Theme.of(context).primaryColorLight,
-                              child: const Text('below'),
+                            const SizedBox(width: 8),
+                            TextButton(
+                              child: const Text('LISTEN'),
+                              onPressed: () {},
                             ),
-                          )
-                        ],
-                      ),
+                            const SizedBox(width: 8),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                  BasicShowcaseWidget(
-                    label: 'Card',
-                    child: Card(
-                      elevation: 5.0,
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          const ListTile(
-                            leading: Icon(Icons.album),
-                            title: Text('The Enchanted Nightingale'),
-                            subtitle: Text(
-                                'Music by Julie Gable. Lyrics by Sidney Stein.'),
+                ),
+                BasicShowcaseWidget(
+                  label: 'Card',
+                  child: Card(
+                    elevation: 0.0,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          leading: Icon(Icons.heart_broken),
+                          title: Text('No elevation'),
+                          subtitle: Text(
+                            'Music by Flow GPT.',
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: <Widget>[
-                              TextButton(
-                                child: const Text('BUY TICKETS'),
-                                onPressed: () {},
-                              ),
-                              const SizedBox(width: 8),
-                              TextButton(
-                                child: const Text('LISTEN'),
-                                onPressed: () {},
-                              ),
-                              const SizedBox(width: 8),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  BasicShowcaseWidget(
-                    label: 'Card',
-                    child: Card(
-                      elevation: 0.0,
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          const ListTile(
-                            leading: Icon(Icons.heart_broken),
-                            title: Text('No elevation'),
-                            subtitle: Text(
-                              'Music by Flow GPT.',
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            const Expanded(child: SizedBox(width: 8)),
+                            TextButton(
+                              child: const Text('+ Info'),
+                              onPressed: () {},
                             ),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: <Widget>[
-                              const Expanded(child: SizedBox(width: 8)),
-                              TextButton(
-                                child: const Text('+ Info'),
-                                onPressed: () {},
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-              title: 'Communication widgets',
-              subTitle: 'Items used for communicate actions to the user'),
+                ),
+              ],
+            ),
+            title: 'Communication widgets',
+            subTitle: 'Items used for communicate actions to the user',
+          ),
 
           NavigationListTile(
             title: 'Selection',

@@ -20,7 +20,7 @@ class NavigationListTile extends StatelessWidget {
             context,
             MaterialPageRoute<Widget>(
               builder: (_) => page,
-            ));
+            ),);
       },
       title: Text(title),
       subtitle: Text(

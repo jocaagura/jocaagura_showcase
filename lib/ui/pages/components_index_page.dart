@@ -14,17 +14,17 @@ class ComponentsIndexPage extends StatelessWidget {
         title: const Text('Components index page'),
       ),
       body: ListView(
-        children: <Widget>[
-          const SizedBox(
+        children: const <Widget>[
+          SizedBox(
             height: 16,
           ),
           NavigationListTile(
-              page: const ColorPalettePresentationPage(),
+              page: ColorPalettePresentationPage(),
               title: 'Color palette presentation',
               subTitle:
-                  'Showcase your color palette in an organized and visually appealing manner, allowing developers and designers to quickly reference and implement the chosen color scheme.'),
+                  'Showcase your color palette in an organized and visually appealing manner, allowing developers and designers to quickly reference and implement the chosen color scheme.',),
           NavigationListTile(
-            page: const CommonMaterialWidgetIndexPage(),
+            page: CommonMaterialWidgetIndexPage(),
             title: 'Common Materials components',
             subTitle: 'Showcase Material basics widgets.',
           ),

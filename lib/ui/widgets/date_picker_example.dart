@@ -53,7 +53,7 @@ class _DatePickerExampleState extends State<DatePickerExample>
   void restoreState(RestorationBucket? oldBucket, bool initialRestore) {
     registerForRestoration(_selectedDate, 'selected_date');
     registerForRestoration(
-        _restorableDatePickerRouteFuture, 'date_picker_route_future');
+        _restorableDatePickerRouteFuture, 'date_picker_route_future',);
   }
 
   void _selectDate(DateTime? newSelectedDate) {
@@ -62,8 +62,8 @@ class _DatePickerExampleState extends State<DatePickerExample>
         _selectedDate.value = newSelectedDate;
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text(
-              'Selected: ${_selectedDate.value.day}/${_selectedDate.value.month}/${_selectedDate.value.year}'),
-        ));
+              'Selected: ${_selectedDate.value.day}/${_selectedDate.value.month}/${_selectedDate.value.year}',),
+        ),);
       });
     }
   }

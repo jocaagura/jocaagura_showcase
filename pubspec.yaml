@@ -1,7 +1,7 @@
 name: jocaagura_showcase
 description: Easily showcase and visualize the components, colors, pages, and widgets of your Flutter theme.
-version: 0.0.2
-homepage:
+version: 0.0.3
+homepage: https://github.com/jocaagura/jocaagura_showcase
 
 environment:
   sdk: '>=3.1.3 <4.0.0'
