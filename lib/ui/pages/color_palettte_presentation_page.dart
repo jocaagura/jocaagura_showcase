@@ -18,9 +18,10 @@ class ColorPalettePresentationPage extends StatelessWidget {
             height: 16,
           ),
           NavigationListTile(
-              page: ColorSchemePage(),
-              title: 'Color Scheme presentation',
-              subTitle: 'Showcase your theme color scheme palette.',),
+            page: ColorSchemePage(),
+            title: 'Color Scheme presentation',
+            subTitle: 'Showcase your theme color scheme palette.',
+          ),
         ],
       ),
     );

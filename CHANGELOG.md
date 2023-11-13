@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * License added
+
+## 0.0.6
+
+* Fixed dart static analysis for a better coverage and provide better documentation.

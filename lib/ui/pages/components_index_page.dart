@@ -19,10 +19,11 @@ class ComponentsIndexPage extends StatelessWidget {
             height: 16,
           ),
           NavigationListTile(
-              page: ColorPalettePresentationPage(),
-              title: 'Color palette presentation',
-              subTitle:
-                  'Showcase your color palette in an organized and visually appealing manner, allowing developers and designers to quickly reference and implement the chosen color scheme.',),
+            page: ColorPalettePresentationPage(),
+            title: 'Color palette presentation',
+            subTitle:
+                'Showcase your color palette in an organized and visually appealing manner, allowing developers and designers to quickly reference and implement the chosen color scheme.',
+          ),
           NavigationListTile(
             page: CommonMaterialWidgetIndexPage(),
             title: 'Common Materials components',
