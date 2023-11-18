@@ -6,6 +6,7 @@ import '../widgets/navigation_list_tile.dart';
 import 'components_index_page.dart';
 import 'custom_pages_index.dart';
 import 'custom_widgets_page.dart';
+import 'typography_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -39,6 +40,14 @@ class HomePage extends StatelessWidget {
               page: page,
               title: title,
               subTitle: subTitle,
+            ),
+            const SizedBox(
+              height: 8.0,
+            ),
+            const NavigationListTile(
+              page: TipographyPage(),
+              title: 'Tipography page',
+              subTitle: 'Show textTheme',
             ),
             const SizedBox(
               height: 8.0,

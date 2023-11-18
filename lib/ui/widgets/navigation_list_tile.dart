@@ -17,10 +17,11 @@ class NavigationListTile extends StatelessWidget {
     return ListTile(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute<Widget>(
-              builder: (_) => page,
-            ),);
+          context,
+          MaterialPageRoute<Widget>(
+            builder: (_) => page,
+          ),
+        );
       },
       title: Text(title),
       subtitle: Text(

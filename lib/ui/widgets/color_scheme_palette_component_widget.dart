@@ -30,7 +30,8 @@ class ColorSchemePaletteComponentWidget extends StatelessWidget {
               color: color,
               borderRadius: BorderRadius.circular(8),
               border: Border.all(
-                  color: Theme.of(context).colorScheme.inverseSurface,),
+                color: Theme.of(context).colorScheme.inverseSurface,
+              ),
             ),
           ),
           Text(

@@ -21,3 +21,7 @@
 ## 0.0.6
 
 * Fixed dart static analysis for a better coverage and provide better documentation.
+
+* ## 0.0.7
+
+* Tipography zone added.
