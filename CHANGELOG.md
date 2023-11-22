@@ -25,3 +25,7 @@
 * ## 0.0.7
 
 * Tipography zone added.
+
+* ## 0.0.8
+
+* Icons and custom icons added

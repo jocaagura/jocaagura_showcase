@@ -22,6 +22,7 @@ void main() {
           child: const Text('Press Me'),
         ), // Provide your second custom widget
       },
+      customIcons: <String, IconData>{},
     );
 
     // Build our app and trigger a frame.
@@ -39,5 +40,45 @@ void main() {
       showcase.customWidgets.containsKey('customWidget1'),
       true,
     ); // Replace with your actual custom page widgets
+  });
+
+  group('JocaaguraShowcase', () {
+    // Define el tema de prueba
+    final ThemeData testTheme = ThemeData.light();
+
+    // Define widgets y páginas personalizados de prueba
+    final Map<String, Widget> testCustomWidgets = <String, Widget>{
+      'widget1': const Text('Widget 1'),
+      'widget2': const Text('Widget 2'),
+    };
+
+    final Map<String, Widget> testCustomPages = <String, Widget>{
+      'page1': const Placeholder(),
+      'page2': const Placeholder(),
+    };
+
+    // Define iconos personalizados de prueba
+    final Map<String, IconData> testCustomIcons = <String, IconData>{
+      'icon1': Icons.star,
+      'icon2': Icons.favorite,
+    };
+
+    // Crea una instancia de JocaaguraShowcase para pruebas
+    final JocaaguraShowcase showcase = JocaaguraShowcase(
+      testTheme,
+      customPages: testCustomPages,
+      customWidgets: testCustomWidgets,
+      customIcons: testCustomIcons,
+    );
+
+    test('materialApp returns MaterialApp with correct theme', () {
+      final MaterialApp app = showcase.materialApp;
+      expect(app.theme, equals(testTheme));
+    });
+
+    test('materialApp has HomePage as home property', () {
+      final MaterialApp app = showcase.materialApp;
+      expect(app.home, isA<HomePage>());
+    });
   });
 }

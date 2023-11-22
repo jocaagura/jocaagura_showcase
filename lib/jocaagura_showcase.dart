@@ -33,6 +33,7 @@ class JocaaguraShowcase {
     this.themeData, {
     required this.customPages,
     required this.customWidgets,
+    required this.customIcons,
   });
 
   /// The overall theme data for the showcase.
@@ -46,11 +47,15 @@ class JocaaguraShowcase {
   /// the corresponding page widgets.
   final Map<String, Widget> customPages;
 
+  /// A map of custom icons, where the keys are page names, and the values are
+  /// the corresponding IconData.
+  final Map<String, IconData> customIcons;
+
   /// Creates and returns a [MaterialApp] instance using the specified theme and home page.
   ///
   /// The home page is set to an instance of [HomePage], passing the current showcase
   /// instance as a property.
-  Widget get materialApp => MaterialApp(
+  MaterialApp get materialApp => MaterialApp(
         title: 'Jocaagura showcase demo',
         theme: themeData,
         home: HomePage(jocaaguraShowcase: this),

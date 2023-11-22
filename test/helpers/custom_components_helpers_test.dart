@@ -4,7 +4,6 @@ import 'package:jocaagura_showcase/helpers/custom_components_helpers.dart';
 import 'package:jocaagura_showcase/jocaagura_showcase.dart';
 import 'package:jocaagura_showcase/ui/widgets/basic_showcase_widget.dart';
 
-
 void main() {
   test('getCustomWidgets should return a list of BasicShowcaseWidget', () {
     // Create an instance of JocaaguraShowcase
@@ -13,8 +12,10 @@ void main() {
       customPages: <String, Widget>{},
       customWidgets: <String, Widget>{
         'customWidget1': const Icon(Icons.favorite),
-        'customWidget2': ElevatedButton(onPressed: () {}, child: const Text('Press Me')),
+        'customWidget2':
+            ElevatedButton(onPressed: () {}, child: const Text('Press Me')),
       },
+      customIcons: <String, IconData>{},
     );
 
     // Call the function to get custom widgets

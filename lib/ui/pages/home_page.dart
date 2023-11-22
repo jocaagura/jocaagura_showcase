@@ -6,6 +6,7 @@ import '../widgets/navigation_list_tile.dart';
 import 'components_index_page.dart';
 import 'custom_pages_index.dart';
 import 'custom_widgets_page.dart';
+import 'icons_page.dart';
 import 'typography_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -48,6 +49,24 @@ class HomePage extends StatelessWidget {
               page: TipographyPage(),
               title: 'Tipography page',
               subTitle: 'Show textTheme',
+            ),
+            const SizedBox(
+              height: 8.0,
+            ),
+            const NavigationListTile(
+              page: IconsPage(),
+              title: 'Icon page',
+              subTitle: 'Show default icons',
+            ),
+            const SizedBox(
+              height: 8.0,
+            ),
+            NavigationListTile(
+              page: IconsPage(
+                iconMap: jocaaguraShowcase.customIcons,
+              ),
+              title: 'Custom icons page',
+              subTitle: 'Show my app custom icons',
             ),
             const SizedBox(
               height: 8.0,
