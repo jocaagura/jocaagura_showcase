@@ -37,8 +37,4 @@ void main() {
     expect(result[1].label, 'customWidget2');
     expect(result[1].child, isInstanceOf<ElevatedButton>());
   });
-
-  // Add more test cases as needed for different scenarios
-
-  // You can also add edge cases or additional tests based on your requirements
 }
