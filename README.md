@@ -12,6 +12,8 @@ Easily showcase and visualize the components, colors, pages, and widgets of your
 
 - **Widget Examples:** Include sample implementations of common widgets and UI patterns to help developers understand their usage and appearance within the app's design.
 
+- **Icon and Custom Icons preview:** Include sample implementations of common Icons and UI patterns to help developers understand their usage and appearance within the app's design.
+
 - **Interactive Experience:** Enable developers to interact with showcased components, colors, and widgets directly, fostering a hands-on understanding of your Flutter theme.
 
 ## How to Use:

@@ -29,3 +29,7 @@
 * ## 0.0.8
 
 * Icons and custom icons added
+
+* ## 0.0.9
+
+* Minor issues fixed related with dart format
